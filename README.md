@@ -24,7 +24,6 @@ Além disso, o projeto simula uma **experiência real de compra**, desde a escol
 ## ⚙️ Funcionalidades
 
 ✅ Listagem de produtos disponíveis (vindos da API)  
-✅ Adição de itens ao carrinho  
 ✅ Finalização de compra  
 ✅ Acompanhamento do pedido em tempo real  
 ✅ Interface responsiva e intuitiva  
@@ -36,23 +35,12 @@ Além disso, o projeto simula uma **experiência real de compra**, desde a escol
 O CSS foi estruturado com **SASS**, utilizando:
 - **Partials** (`_header.scss`, `_footer.scss`, `_cards.scss`, etc.)
 - **Variáveis e mixins** para facilitar manutenção
-- **Importações** centralizadas em um arquivo principal (`main.scss`)
+- **Importações** centralizadas em um arquivo principal (`style.scss`)
 
 O JavaScript foi escrito com foco em **modularidade e clareza**, dividindo:
 - Manipulação do DOM  
 - Requisições à API  
 - Controle de estado do pedido  
-
----
-
-## 📡 Integração com a API
-
-O sistema consome uma **API de lanches**, responsável por:
-- Retornar o cardápio completo  
-- Receber os pedidos  
-- Atualizar o status (preparo, pronto, entregue)
-
-> A comunicação é feita via `fetch()` utilizando o padrão `async/await`.
 
 ---
 
