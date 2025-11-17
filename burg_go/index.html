@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.23.0/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="icon" href="img/icon.png?v=2">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.23.0/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Burg&Go</title>
+</head>
+<body>
+    <header>
+      <div class="logo">
+        <img src="/burg_go/img/logo.png" alt="Logo">
+      </div>
+      <nav>
+        <div class="headerHam">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#banner-img">Início</a></li>
+          <li><a href="#menu">Cardápio</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#insta">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="trilho" id="trilho">
+        <div class="indicador"></div>
+      </div>
+    </header>
+<script src="js/headerHam.js"></script>
+    <main>
+        <div class="banner">
+            <img  id="banner-img" src="img/banner/banner1.png">
+        </div>
+        <h1 id="menu" class="titulo-cardapio">Nosso cardápio</h1>
+
+       <div id="container_menu" class="container-menu"></div>
+
+       <div id="preloader">
+        <div id="loader"></div>
+       </div>
+      <div id="meuModal" class="modal">
+   <div class="modal-content">
+     <span class="fechar">X</span> 
+     <div id="modal-body"></div>   
+   </div>
+</div>
+   </div>
+        <div class="sobre" id="sobre">
+            <div class="conteudo"  data-aos="fade-right">
+            <h3>Sabor que conquista, frescor que encanta!</h3>
+            <p>Nosso cardápio foi pensado com carinho para agradar todos os paladares desde os clássicos que aquecem o coração até as novidades que surpreendem.<br>Aqui, cada mordida é uma experiência.</p>
+            <br>
+            <p class="texto-destaque">Seja bem-vindo(a) e aproveite sua experiência conosco!</p>
+            </div>
+          
+            <div class="contact-cards" data-aos="fade-left">
+              <div class="card call">
+                <div class="icon"><img src="/burg_go/img/sobre/telefone.svg"></div>
+                <p class="text">Tem alguma duvida?</p>
+                <a href="" class="link">Ligue para nós →</a>
+              </div>
+
+              <div class="card chat">
+                <div class="icon"><img src="/burg_go/img/sobre/chat.svg"></div>
+                <p class="text">Ficou alguma duvida?</p>
+                <a href="" class="link">Nos envie uma mensagem →</a>
+              </div>
+            </div>
+
+        </div>
+     <div id="insta" class="insta-img"
+     data-aos-anchor-placement="top-bottom" id="insta">
+      <div class="image-wrapper">
+        <img src="img/insta/img1.png" alt="Imagem 1">
+      </div>
+      <div class="image-wrapper">
+        <img src="img/insta/img2.png" alt="Imagem 2">
+      </div>
+      <div class="image-wrapper">
+        <img src="img/insta/img3.png" alt="Imagem 3">
+      </div>
+      <div class="image-wrapper">
+        <img src="img/insta/img4.png" alt="Imagem 4">
+      </div>
+    </div>
+
+    </main>
+   <footer class="footer">
+        <div class="footer-content">
+          
+          <nav class="footer-menu">
+            <a href="#">Inicial</a>
+            <a href="#">Sobre</a>
+            <a href="#">Comprar</a>
+            <a href="#">Contato</a>
+          </nav>
+      
+          <div class="footer-socials">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="Instagram"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Twitter"></a>
+          </div>
+          
+          <p class="footer-credit"> Feito por <strong>Maria Julia Felix</strong></p>
+        </div>
+      </footer>
+      <script>
+        AOS.init();
+      </script>
+      
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/listMenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.23.0/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

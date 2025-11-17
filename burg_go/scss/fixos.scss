@@ -1,0 +1,116 @@
+@use 'mixins';
+.headerHam {
+  display: none; 
+}
+
+header {
+  @include mixins.centralizar;
+  position: fixed;
+  top: 15px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: #F5EBDC;
+  padding: 10px 45px;
+  border-radius: 50px;
+  width: auto;
+  box-shadow: rgba(56, 56, 56, 0.753) 1px 0px 10px 1px;
+  transition: transform 0.3s ease-in-out, border-radius 0.2s ease-in-out;
+}
+
+header.hide {
+  transform: translate(-50%, -200%);
+}
+
+.logo img{
+  width: auto;
+  height: 40px;
+  margin: 0%;
+}
+
+nav{
+  padding-left: 100px;
+  padding-right: 130px;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+footer{
+    @include mixins.centralizar;
+    box-shadow: rgba(20, 20, 20, 0.26) 1px 0px 10px 1px;
+    background-color: #F5EBDC;
+    border-top: 1px solid #e5e7eb;
+    padding: 40px 20px;
+    text-align: center;
+
+  .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .footer-menu a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-menu a:hover {
+    color: #FE7743;
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .footer-socials a {
+    display: inline-block;
+    background-color: #fcdaa7;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .footer-socials a:hover {
+    background-color: #FE7743;
+  }
+  
+  .footer-socials img {
+    height: 25px;
+  }
+  
+  .footer-credit {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+  
+nav{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+}

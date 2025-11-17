@@ -1,0 +1,257 @@
+@use 'mixins';
+@media (max-width: 768px) {
+
+  header {
+  @include mixins.centralizar;
+  position: fixed;
+  top: 10px; 
+  width: auto;
+  gap: 30px;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: #f5ebdcb6;
+  padding: 5px;
+  box-shadow: none;
+}
+
+.trilho{
+ margin: 0%;
+}
+
+nav{
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+
+  .headerHam {
+    display: flex;
+    left: 0%;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001; 
+  }
+
+  .headerHam span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+
+  .headerHam.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 10px);
+  }
+
+  .headerHam.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .headerHam.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -10px);
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #F5EBDC;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    gap: 4px;
+    display: none; 
+    box-shadow: rgba(56, 56, 56, 0.753) 1px 0px 10px 1px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .logo img{
+width: 120px;
+height: auto;
+  }
+
+
+.titulo-cardapio {
+    padding-left: 0;
+    padding-top: 0;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: auto;
+    font-size: 1rem;
+    color: #521C0D;
+}
+
+.container-menu{
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+    body{
+      background-color: antiquewhite;
+    }
+
+    .banner{
+      height: auto;
+    }
+
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .conteudo h3{
+    font-size: 25px;
+    padding-top: 2rem;
+  }
+
+  .conteudo {
+    padding-top: 10px;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .conteudo p{
+      font-size: 15px;
+  }
+
+  .conteudo .texto-destaque{
+      font-size: 16px;
+
+  }
+
+  .imagem-sobre img {
+    display: none;
+  }
+
+  .insta-img {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    padding: 1rem;
+    width: auto;
+    gap: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer-menu,
+  .footer-apps,
+  .footer-socials {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .footer-apps img {
+    width: 130px;
+  }
+
+  .footer-socials img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer-menu a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  header {
+  @include mixins.centralizar;
+  position: fixed;
+  top: 15px; 
+  left: 50%;
+  gap: 25px;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: #F5EBDC;
+  padding: 10px 45px;
+  border-radius: 50px;
+  width: auto;
+  box-shadow: rgba(56, 56, 56, 0.753) 1px 0px 10px 1px;
+  transition: transform 0.3s ease-in-out, border-radius 0.2s ease-in-out;
+}
+
+a{
+  font-size: 1rem;
+}
+.logo img{
+  width: 130px;
+  height: auto;
+  margin: 0%;
+}
+
+nav{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+  .container-menu{
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+    width: auto;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .card-menu{
+    width: 250px;
+    height: 300px
+  }
+
+  .sobre {
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .conteudo {
+    width: 100%;
+    text-align: left;
+  }
+
+  .conteudo p {
+    font-size: 1rem;
+  }
+
+  .conteudo .texto-destaque {
+    font-size: 1.2rem;
+  }
+
+  .imagem-sobre img {
+   display: none;
+  }
+}
+
+

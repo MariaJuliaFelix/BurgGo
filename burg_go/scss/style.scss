@@ -1,0 +1,25 @@
+@use 'mixins';
+@use 'fixos';
+@use 'banner';
+@use 'sobre';
+@use 'insta';
+@use 'responsivo';
+@use 'rendermenu';
+@use 'loading';
+@use 'modal';
+@use 'informations';
+@use 'cartao';
+@use 'darkmode';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FBF8EF;
+  font-family: 'Poppins', sans-serif;
+}
+#meuModal {
+  display: none;
+}
